@@ -1,0 +1,44 @@
+{
+  "plugins": [
+    [
+      "module:react-native-dotenv",
+      {
+        "envName": "APP_ENV",
+        "moduleName": "@env",
+        "path": ".env",
+        "blocklist": null,
+        "allowlist": null,
+        "safe": false,
+        "allowUndefined": true,
+        "verbose": false
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "extensions": [
+          ".ios.js",
+          ".android.js",
+          ".ts",
+          ".ios.tsx",
+          ".android.tsx",
+          ".tsx",
+          ".jsx",
+          ".js",
+          ".json"
+        ],
+        "alias": {
+          "@src": "./src",
+          "@styles": "./src/styles",
+          "@navigations": "./src/navigations",
+          "@assets": "./src/assets",
+          "@screens": "./src/screens",
+          "@stores": "./src/stores",
+          "@utils": "./src/utils",
+          "@components": "./src/components"
+        }
+      }
+    ]
+  ]
+}
